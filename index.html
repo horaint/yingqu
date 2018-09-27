@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>影趣：让摄影充满乐趣</title>
+    <link rel="stylesheet" href="./mui/css/mui.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <style>
+        .mui-bar{
+        background: #fff;
+        }
+        .mui-table-view-my{
+            margin-top: 1em;
+        }
+        .mui-grid-view.mui-grid-9{
+            background: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="mui-bar mui-bar-nav">
+        <h1 class="mui-title">影趣：让摄影充满乐趣</h1>
+    </header>
+    <nav class="mui-bar mui-bar-tab">
+        <a class="mui-tab-item mui-active" href="#tabbar">
+            <span class="mui-icon mui-icon-home"></span>
+            <span class="mui-tab-label">主页</span>
+        </a>
+        <a class="mui-tab-item" href="#tabbar-with-chat">
+            <span class="mui-icon mui-icon-settings"></span>
+            <span class="mui-tab-label">图集</span>
+        </a>
+        <a class="mui-tab-item" href="#tabbar-with-contact">
+            <span class="mui-icon mui-icon-navigate"></span>
+            <span class="mui-tab-label">动态</span>
+        </a>
+        <a class="mui-tab-item" href="#tabbar-with-map">
+            <span class="mui-icon mui-icon-gear"></span>
+            <span class="mui-tab-label">设置</span>
+        </a>
+    </nav>
+    <div class="mui-content">
+        <!-- 主页 -->
+        <div id="tabbar" class="mui-control-content mui-active">
+            <!-- 轮播图 -->
+            <div id="slider" class="mui-slider">
+                <div class="mui-slider-group mui-slider-loop">
+                    <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+                    <div class="mui-slider-item mui-slider-item-duplicate">
+                        <a href="#">
+                            <img src="./img/f1.png">
+                            <p class="mui-slider-title">香格里拉</p>
+                        </a>
+                    </div>
+                    <div class="mui-slider-item">
+                        <a href="#">
+                            <img src="./img/f2.png">
+                            <p class="mui-slider-title">束河古镇的夜</p>
+                        </a>
+                    </div>
+                    <div class="mui-slider-item">
+                        <a href="#">
+                            <img src="./img/f3.png">
+                            <p class="mui-slider-title">穿越虎跳峡</p>
+                        </a>
+                    </div>
+                    <div class="mui-slider-item">
+                        <a href="#">
+                            <img src="./img/f4.png">
+                            <p class="mui-slider-title">背包十年</p>
+                        </a>
+                    </div>
+                    <div class="mui-slider-item">
+                        <a href="#">
+                            <img src="./img/f1.png">
+                            <p class="mui-slider-title">香格里拉</p>
+                        </a>
+                    </div>
+                    <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+                    <div class="mui-slider-item mui-slider-item-duplicate">
+                        <a href="#">
+                            <img src="./img/f2.png">
+                            <p class="mui-slider-title">束河古镇的夜</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="mui-slider-indicator mui-text-right">
+                    <div class="mui-indicator mui-active"></div>
+                    <div class="mui-indicator"></div>
+                    <div class="mui-indicator"></div>
+                    <div class="mui-indicator"></div>
+                </div>
+            </div>
+            <!-- 圈友动态 -->
+            <ul class="mui-table-view mui-table-view-my">
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">
+                        圈友动态
+                    </a>
+                </li>
+            </ul>
+            <ul class="mui-table-view">
+                <li class="mui-table-view-cell mui-media">
+                    <a href="javascript:;">
+                        <img class="mui-media-object mui-pull-left" src="./img/t1.jpg" style="border-radius: 50%;">
+                        <div class="mui-media-body">
+                            林倾
+                            <p class='mui-ellipsis'>洱海，真是美得不像话...</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media">
+                    <a href="javascript:;">
+                        <img class="mui-media-object mui-pull-left" src="./img/t2.jpg" style="border-radius: 50%;">
+                        <div class="mui-media-body">
+                            朵朵
+                            <p class='mui-ellipsis'>香格里拉，下次不会一个人来了...感冒中。</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <!-- 美图精选 -->
+            <ul class="mui-table-view mui-table-view-my">
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">
+                        美图精选
+                    </a>
+                </li>
+            </ul>
+            <ul class="mui-table-view mui-grid-view">
+                <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                    <a href="#">
+                        <img class="mui-media-object" src="./img/r3.png">
+                        <div class="mui-media-body">洱海就在我身后</div>
+                    </a></li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                    <a href="#">
+                        <img class="mui-media-object" src="./img/r1.png">
+                        <div class="mui-media-body">白云蓝天草地和我</div>
+                    </a></li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                    <a href="#"><img class="mui-media-object" src="./img/r5.png">
+                        <div class="mui-media-body">漏天钢琴学习中</div>
+                    </a></li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                    <a href="#">
+                        <img class="mui-media-object" src="./img/r6.png">
+                        <div class="mui-media-body">奔跑是生命的意义</div>
+                    </a></li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                    <a href="#">
+                        <img class="mui-media-object" src="./img/r9.png">
+                        <div class="mui-media-body">坐在松赞林寺的台阶上</div>
+                    </a></li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                    <a href="#">
+                        <img class="mui-media-object" src="./img/r11.png">
+                        <div class="mui-media-body">试与与老鹰争蓝天</div>
+                    </a></li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                    <a href="#"><img class="mui-media-object" src="./img/r13.png">
+                        <div class="mui-media-body">香格里拉的阳光有点晒</div>
+                    </a></li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                    <a href="#">
+                        <img class="mui-media-object" src="./img/r14.png">
+                        <div class="mui-media-body">挥一挥衣袖带走一片云彩</div>
+                    </a></li>
+            </ul>
+            <!-- 摄影技巧 -->
+            <ul class="mui-table-view mui-table-view-my">
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">
+                        摄影技巧
+                    </a>
+                </li>
+            </ul>
+            <ul class="mui-table-view">
+                <li class="mui-table-view-cell mui-media">
+                    <a href="javascript:;">
+                        <img class="mui-media-object mui-pull-right" src="./img/r8.png">
+                        <div class="mui-media-body">
+                            人物摄影的构图
+                            <p class='mui-ellipsis'>发布日期：2018-09-05，作者：林倾</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media">
+                    <a href="javascript:;">
+                        <img class="mui-media-object mui-pull-right" src="./img/r6.png">
+                        <div class="mui-media-body">
+                            人物摄影的比例
+                            <p class='mui-ellipsis'>发布日期：2018-08-20，作者：朵朵</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media">
+                    <a href="javascript:;">
+                        <img class="mui-media-object mui-pull-right" src="./img/o1.png">
+                        <div class="mui-media-body">
+                            借一道逆光
+                            <p class='mui-ellipsis'>发布日期：2018-08-12，作者：林倾</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media">
+                    <a href="javascript:;">
+                        <img class="mui-media-object mui-pull-right" src="./img/r14.png">
+                        <div class="mui-media-body">
+                            自然的姿势
+                            <p class='mui-ellipsis'>发布日期：2018-05-15，作者：林倾</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="mui-table-view-cell mui-media">
+                    <a href="javascript:;">
+                        <img class="mui-media-object mui-pull-right" src="./img/f1.png">
+                        <div class="mui-media-body">
+                            构图的重要性
+                            <p class='mui-ellipsis'>发布日期：2018-05-10，作者：常在</p>
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
+            <!-- 平台推荐-->
+            <ul class="mui-table-view mui-table-view-my">
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">
+                        平台推荐
+                    </a>
+                </li>
+            </ul>
+            <ul class="mui-table-view mui-grid-view mui-grid-9">
+                <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><img src="./img/a6.jpg" alt=""
+                        style="width:100%;">B612咔叽</li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><img src="./img/a2.jpg" alt=""
+                        style="width:100%;">美图秀秀</li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><img src="./img/a3.jpg" alt=""
+                        style="width:100%;">天天P图</li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><img src="./img/a4.png" alt=""
+                        style="width:100%;">picsart美易</li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><img src="./img/a5.png" alt=""
+                        style="width:100%;">最美证件照</li>
+                <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><img src="./img/a1.png" alt=""
+                        style="width:100%;">轻颜相机</li>
+            </ul>
+            <p style="text-align:center;margin: 15px 0;">——无更多资源——</p>
+        </div>
+        <!-- 图集 -->
+        <div id="tabbar-with-chat" class="mui-control-content">
+            <div class="mui-content-padded">
+                <p>第01张图的赏析：</p>
+                <p>
+                    <img src="./img/r1.png" data-preview-src="" data-preview-group="1" />
+                </p>
+                <p>第02张图的赏析：</p>
+                <p>
+                    <img src="./img/r2.png" data-preview-src="" data-preview-group="1" />
+                </p>
+                <p>第03张图的赏析：</p>
+                <p>
+                    <img src="./img/r3.png" data-preview-src="" data-preview-group="1" />
+                </p>
+                <p>第04张图的赏析：</p>
+                <p>
+                    <img src="./img/r4.png" data-preview-src="" data-preview-group="1" />
+                </p>
+                <p>第05张图的赏析：</p>
+                <p>
+                    <img src="./img/r5.png" data-preview-src="" data-preview-group="1" />
+                </p>
+                <p>第06张图的赏析：</p>
+                <p>
+                    <img src="./img/r6.png" data-preview-src="" data-preview-group="1" />
+                </p>
+                <p>第07张图的赏析：</p>
+                <p>
+                    <img src="./img/r7.png" data-preview-src="" data-preview-group="1" />
+                </p>
+                <p>第08张图的赏析：</p>
+                <p>
+                    <img src="./img/r8.png" data-preview-src="" data-preview-group="1" />
+                </p>
+                <p>第09张图的赏析：</p>
+                <p>
+                    <img src="./img/r9.png" data-preview-src="" data-preview-group="1" />
+                </p>
+                <p>第10张图的赏析：</p>
+                <p>
+                    <img src="./img/r10.png" data-preview-src="" data-preview-group="1" />
+                </p>
+                <p>第11张图的赏析：</p>
+                <p>
+                    <img src="./img/r11.png" data-preview-src="" data-preview-group="1" />
+                </p>
+                <p>第12张图的赏析：</p>
+                <p>
+                    <img src="./img/r12.png" data-preview-src="" data-preview-group="1" />
+                </p>
+                <p>第12张图的赏析：</p>
+                <p>
+                    <img src="./img/r13.png" data-preview-src="" data-preview-group="1" />
+                </p>
+                <p>第14张图的赏析：</p>
+                <p>
+                    <img src="./img/r14.png" data-preview-src="" data-preview-group="1" />
+                </p>
+                <p>第14张图的赏析：</p>
+                <p>
+                    <img src="./img/f1.png" data-preview-src="" data-preview-group="1" />
+                </p>
+                <p>第16张图的赏析：</p>
+                <p>
+                    <img src="./img/f2.png" data-preview-src="" data-preview-group="1" />
+                </p>
+                <p>第17张图的赏析：</p>
+                <p>
+                    <img src="./img/f3.png" data-preview-src="" data-preview-group="1" />
+                </p>
+                <p>第18张图的赏析：</p>
+                <p>
+                    <img src="./img/f4.png" data-preview-src="" data-preview-group="1" />
+                </p>
+                <p>第19张图的赏析：</p>
+                <p>
+                    <img src="./img/c1.png" data-preview-src="" data-preview-group="1" />
+                </p>
+                <p>第20张图的赏析：</p>
+                <p>
+                    <img src="./img/c4.png" data-preview-src="" data-preview-group="1" />
+                </p>
+                <p>第21张图的赏析：</p>
+                <p>
+                    <img src="./img/c3.png" data-preview-src="" data-preview-group="1" />
+                </p>
+                <p>第21张图的赏析：</p>
+                <p>
+                    <img src="./img/c2.png" data-preview-src="" data-preview-group="1" />
+                </p>
+
+
+            </div>
+            <p style="text-align:center;margin: 15px 0;">——无更多资源——</p>
+        </div>
+        <!-- 动态 -->
+        <div id="tabbar-with-contact" class="mui-control-content">
+            <div class="mui-card">
+                <div class="mui-card-header mui-card-media">
+                    <div class="mui-card-media-object mui-pull-left">
+                        <img src="./img/t1.jpg" width="34px" height="34px" style="border-radius: 50%;" />
+                    </div>
+                    <div class="mui-card-media-body" style="height: 34px;line-height: 34px;">
+                        <p class="mui-ellipsis"><span style="font-weight:bold;margin:0 0.5em;">林倾</span> 发表于 15分钟前</p>
+                    </div>
+                </div>
+                <div class="mui-card-content mui-card-media" style="height:40vw;background-image:url(./img/f1.png)"></div>
+                <div class="mui-card-footer">
+                    <a class="mui-card-link">查看详情</a>
+                    <a class="mui-card-link">评论(15)</a>
+                    <a class="mui-card-link">收藏(8)</a>
+                </div>
+            </div>
+            <div class="mui-card">
+                <div class="mui-card-header mui-card-media">
+                    <div class="mui-card-media-object mui-pull-left">
+                        <img src="./img/t2.jpg" width="34px" height="34px" style="border-radius: 50%;" />
+                    </div>
+                    <div class="mui-card-media-body" style="height: 34px;line-height: 34px;">
+                        <p class="mui-ellipsis"><span style="font-weight:bold;margin:0 0.5em;">朵朵</span> 发表于 1小时前</p>
+                    </div>
+                </div>
+                <div class="mui-card-content mui-card-media" style="height:40vw;background-image:url(./img/r13.png)"></div>
+                <div class="mui-card-footer">
+                    <a class="mui-card-link">查看详情</a>
+                    <a class="mui-card-link">评论(25)</a>
+                    <a class="mui-card-link">收藏(12)</a>
+                </div>
+            </div>
+            <div class="mui-card">
+                <div class="mui-card-header mui-card-media">
+                    <div class="mui-card-media-object mui-pull-left">
+                        <img src="./img/t2.jpg" width="34px" height="34px" style="border-radius: 50%;" />
+                    </div>
+                    <div class="mui-card-media-body" style="height: 34px;line-height: 34px;">
+                        <p class="mui-ellipsis"><span style="font-weight:bold;margin:0 0.5em;">朵朵</span> 发表于 1小时前</p>
+                    </div>
+                </div>
+                <div class="mui-card-content mui-card-media" style="height:40vw;background-image:url(./img/r14.png)"></div>
+                <div class="mui-card-footer">
+                    <a class="mui-card-link">查看详情</a>
+                    <a class="mui-card-link">评论(18)</a>
+                    <a class="mui-card-link">收藏(9)</a>
+                </div>
+            </div>
+            <div class="mui-card">
+                <div class="mui-card-header mui-card-media">
+                    <div class="mui-card-media-object mui-pull-left">
+                        <img src="./img/t2.jpg" width="34px" height="34px" style="border-radius: 50%;" />
+                    </div>
+                    <div class="mui-card-media-body" style="height: 34px;line-height: 34px;">
+                        <p class="mui-ellipsis"><span style="font-weight:bold;margin:0 0.5em;">朵朵</span> 发表于 1小时前</p>
+                    </div>
+                </div>
+                <div class="mui-card-content mui-card-media" style="height:40vw;background-image:url(./img/r12.png)"></div>
+                <div class="mui-card-footer">
+                    <a class="mui-card-link">查看详情</a>
+                    <a class="mui-card-link">评论(32)</a>
+                    <a class="mui-card-link">收藏(15)</a>
+                </div>
+            </div>
+            <div class="mui-card">
+                <div class="mui-card-header mui-card-media">
+                    <div class="mui-card-media-object mui-pull-left">
+                        <img src="./img/t1.jpg" width="34px" height="34px" style="border-radius: 50%;" />
+                    </div>
+                    <div class="mui-card-media-body" style="height: 34px;line-height: 34px;">
+                        <p class="mui-ellipsis"><span style="font-weight:bold;margin:0 0.5em;">林倾</span> 发表于 2小时前</p>
+                    </div>
+                </div>
+                <div class="mui-card-content mui-card-media" style="height:40vw;background-image:url(./img/f2.png)"></div>
+                <div class="mui-card-footer">
+                    <a class="mui-card-link">查看详情</a>
+                    <a class="mui-card-link">评论(12)</a>
+                    <a class="mui-card-link">收藏(8)</a>
+                </div>
+            </div>
+            <div class="mui-card">
+                <div class="mui-card-header mui-card-media">
+                    <div class="mui-card-media-object mui-pull-left">
+                        <img src="./img/t4.jpg" width="34px" height="34px" style="border-radius: 50%;" />
+                    </div>
+                    <div class="mui-card-media-body" style="height: 34px;line-height: 34px;">
+                        <p class="mui-ellipsis"><span style="font-weight:bold;margin:0 0.5em;">常在</span> 发表于 6小时前</p>
+                    </div>
+                </div>
+                <div class="mui-card-content mui-card-media" style="height:40vw;background-image:url(./img/o1.png)"></div>
+                <div class="mui-card-footer">
+                    <a class="mui-card-link">查看详情</a>
+                    <a class="mui-card-link">评论(43)</a>
+                    <a class="mui-card-link">收藏(30)</a>
+                </div>
+            </div>
+            <div class="mui-card">
+                <div class="mui-card-header mui-card-media">
+                    <div class="mui-card-media-object mui-pull-left">
+                        <img src="./img/t4.jpg" width="34px" height="34px" style="border-radius: 50%;" />
+                    </div>
+                    <div class="mui-card-media-body" style="height: 34px;line-height: 34px;">
+                        <p class="mui-ellipsis"><span style="font-weight:bold;margin:0 0.5em;">常在</span> 发表于 6小时前</p>
+                    </div>
+                </div>
+                <div class="mui-card-content mui-card-media" style="height:40vw;background-image:url(./img/f3.png)"></div>
+                <div class="mui-card-footer">
+                    <a class="mui-card-link">查看详情</a>
+                    <a class="mui-card-link">评论(23)</a>
+                    <a class="mui-card-link">收藏(15)</a>
+                </div>
+            </div>
+            <div class="mui-card">
+                <div class="mui-card-header mui-card-media">
+                    <div class="mui-card-media-object mui-pull-left">
+                        <img src="./img/t4.jpg" width="34px" height="34px" style="border-radius: 50%;" />
+                    </div>
+                    <div class="mui-card-media-body" style="height: 34px;line-height: 34px;">
+                        <p class="mui-ellipsis"><span style="font-weight:bold;margin:0 0.5em;">常在</span> 发表于 6小时前</p>
+                    </div>
+                </div>
+                <div class="mui-card-content mui-card-media" style="height:40vw;background-image:url(./img/f4.png)"></div>
+                <div class="mui-card-footer">
+                    <a class="mui-card-link">查看详情</a>
+                    <a class="mui-card-link">评论(12)</a>
+                    <a class="mui-card-link">收藏(10)</a>
+                </div>
+            </div>
+            <div class="mui-card">
+                <div class="mui-card-header mui-card-media">
+                    <div class="mui-card-media-object mui-pull-left">
+                        <img src="./img/t1.jpg" width="34px" height="34px" style="border-radius: 50%;" />
+                    </div>
+                    <div class="mui-card-media-body" style="height: 34px;line-height: 34px;">
+                        <p class="mui-ellipsis"><span style="font-weight:bold;margin:0 0.5em;">林倾</span> 发表于 1天前</p>
+                    </div>
+                </div>
+                <div class="mui-card-content mui-card-media" style="height:40vw;background-image:url(./img/r1.png)"></div>
+                <div class="mui-card-footer">
+                    <a class="mui-card-link">查看详情</a>
+                    <a class="mui-card-link">评论(24)</a>
+                    <a class="mui-card-link">收藏(13)</a>
+                </div>
+            </div>
+            <div class="mui-card">
+                <div class="mui-card-header mui-card-media">
+                    <div class="mui-card-media-object mui-pull-left">
+                        <img src="./img/t1.jpg" width="34px" height="34px" style="border-radius: 50%;" />
+                    </div>
+                    <div class="mui-card-media-body" style="height: 34px;line-height: 34px;">
+                        <p class="mui-ellipsis"><span style="font-weight:bold;margin:0 0.5em;">林倾</span> 发表于 1天前</p>
+                    </div>
+                </div>
+                <div class="mui-card-content mui-card-media" style="height:40vw;background-image:url(./img/r2.png)"></div>
+                <div class="mui-card-footer">
+                    <a class="mui-card-link">查看详情</a>
+                    <a class="mui-card-link">评论(11)</a>
+                    <a class="mui-card-link">收藏(2)</a>
+                </div>
+            </div>
+            <div class="mui-card">
+                <div class="mui-card-header mui-card-media">
+                    <div class="mui-card-media-object mui-pull-left">
+                        <img src="./img/t1.jpg" width="34px" height="34px" style="border-radius: 50%;" />
+                    </div>
+                    <div class="mui-card-media-body" style="height: 34px;line-height: 34px;">
+                        <p class="mui-ellipsis"><span style="font-weight:bold;margin:0 0.5em;">林倾</span> 发表于 1天前</p>
+                    </div>
+                </div>
+                <div class="mui-card-content mui-card-media" style="height:40vw;background-image:url(./img/r3.png)"></div>
+                <div class="mui-card-footer">
+                    <a class="mui-card-link">查看详情</a>
+                    <a class="mui-card-link">评论(25)</a>
+                    <a class="mui-card-link">收藏(8)</a>
+                </div>
+            </div>
+            <p style="text-align:center;margin: 15px 0;">——无更多资源——</p>
+        </div>
+        <!-- 设置 -->
+        <div id="tabbar-with-map" class="mui-control-content">
+            <div style="text-align:center;margin-top: 30px;">
+                <img src="./img/t4.jpg" style="width:30%;border-radius: 50%;" />
+            </div>
+            <p style="text-align:center;margin-top: 10px;"><button type="button" class="mui-btn mui-btn-outlined">常 在</button></p>
+            <ul class="mui-table-view">
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">
+                        我的主页
+                    </a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">
+                        我的发布
+                    </a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">
+                        我的评论
+                    </a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">
+                        我的收藏
+                    </a>
+                </li>
+            </ul>
+            <ul class="mui-table-view" style="margin-top: 25px;">
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">
+                        关于影趣
+                    </a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">
+                        隐私申明
+                    </a>
+                </li>
+            </ul>
+            <div style="text-align:center;margin-top: 15px;"><button type="button" class="mui-btn mui-btn-danger">退出登录</button></div>
+
+
+        </div>
+    </div>
+    <script src="./mui/js/mui.min.js"></script>
+    <script src="./mui/js/mui.zoom.js"></script>
+    <script src="./mui/js/mui.previewimage.js"></script>
+    <script>
+        mui.previewImage();
+    </script>
+</body>
+
+</html>
